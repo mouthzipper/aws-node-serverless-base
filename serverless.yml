@@ -10,8 +10,7 @@ provider:
   runtime: nodejs12.x
   memorySize: 256
   stage: ${opt:stage, 'dev'}
-  region: us-west-1
-  profile: mzpr
+
   iamRoleStatements:
     - Effect: Allow
       Action:
