@@ -10,7 +10,6 @@ provider:
   runtime: nodejs12.x
   memorySize: 256
   stage: ${opt:stage, 'dev'}
-
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -18,9 +17,12 @@ provider:
       Resource: "*"
   
 functions:
-  hello:
-    handler: src/handlers/hello.handler
+  hello-world:
+    handler: src/handlers/hello-world/hello-world.handler
     events:
       - http:
-          method: GET
-          path: /hello
+          method: get
+          path: /hello-world
+custom:
+  jest:
+    collectCoverage: true

@@ -1,9 +1,12 @@
 {
-  "name": "aaws-node-serverless-base",
+  "name": "aws-node-serverless-base",
   "version": "1.0.0",
   "description": "AWS NodeJS Serverless Framework Base Template",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "test": "serverless-bundle test --env=node"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^8.1.0",
@@ -15,6 +18,7 @@
     "webpack": "^4.35.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.709.0"
+    "aws-sdk": "^2.709.0",
+    "axios": "^0.19.2"
   }
 }

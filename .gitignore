@@ -10,3 +10,6 @@ jspm_packages
 
 #editor
 .vscode
+
+#test
+coverage
